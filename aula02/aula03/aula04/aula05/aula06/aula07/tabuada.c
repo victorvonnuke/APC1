@@ -1,11 +1,21 @@
 #include <stdio.h>
 int main() {
-    int numero = 0;
-    
+    int numero = 1;
+
+while (numero < 1 || numero > 10) {
     printf("Entre com um numero inteiro de 1 a 10: ");
     scanf("%i", &numero);
+    while (getchar() != 'n'); 
+    }
 
-    // printf("A tabuada de %i e\n", numero);
+do {
+        printf("Entre com um numero inteiro de 1 a 10: ");
+        scanf("%i", &numero);
+        while (getchar() != 'n');
+    } while (numero < 1 || numero > 10);
+
+
+    printf("A tabuada de %i e\n", numero);
     // printf("1 x %i = %i\n", numero, 1 * numero);
     // printf("2 x %i = %i\n", numero, 2 * numero);
     // printf("3 x %i = %i\n", numero, 3 * numero);
